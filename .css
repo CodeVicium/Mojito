@@ -1,0 +1,73 @@
+.cuerpo {
+    background-attachment:fixed;
+    background-image:url(./public/img/imagen\ fondo.jpg) ;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: blanchedalmond;
+    
+}
+.curda{ 
+    
+}
+.navegador{
+    background-color:gray  ;
+}
+
+
+
+.titulo {
+     text-align: center;
+     border: 2px solid;
+     height:200px;
+     background-attachment: fixed;
+     margin:0px;
+     
+
+      }
+      .lista{
+        margin: auto;
+          
+      }
+ .somos{
+     text-align: right;
+ }
+ .objetivo{
+     text-align: center;
+
+ }
+ .firma{
+     background-color: gray;
+ }
+ * {
+    padding: 0px;
+    margin: 0px;
+}
+#lista{
+    margin:auto;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+.lista li{
+    background-color: black;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+}
+.lista li{float: left;
+
+}
+.lista li:hover{
+    background-color: #434343;
+} 
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 50px;
+}
+.lista
+  
