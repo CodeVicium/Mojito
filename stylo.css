@@ -27,12 +27,16 @@ ul li{
     list-style: none;
 }
 .nav li {
-    background-color: rgba(3, 3, 3, 0.945);
+    background-color: rgba(255, 255, 255, 0.945);
     color: rgb(252, 145, 5);
     text-decoration: none;
     padding: 10px 15px;
     display:block;
     border:1px solid;
+    border-radius: 10px;
+    width: 310px;
+    height: 50px;
+    text-align: center;
     
 
     
@@ -74,11 +78,14 @@ ul li{
 
 .somos{
     border: "1px" solid ;
-    
+    background-color: #434343;
+    font-family: Arial, Helvetica, sans-serif;
     text-align:center;
 }
 .valores{
     text-align: center;
+    background-color: #434343;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
