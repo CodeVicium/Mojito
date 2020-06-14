@@ -10,5 +10,7 @@ height: 100vh;
     background-size: cover;
 }
 .navbar-brand > img{
-width: 3rem;
+width: 2rem;
+height: 2rem;
+
 }
