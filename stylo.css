@@ -2,18 +2,17 @@
 width: 100vw;
 height: 100vh; 
 }
-#category{
-    width: 100vw;
-    height: 100vh; 
-    background-image: url(./public/img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .navbar-brand > img{
-width: 2rem;
-height: 2rem;
+width: 15rem;
+height: 5rem;
 
 }
 .colo-sm-4{
     color: blanchedalmond;
+}
+.footer{ 
+    background-color: black;
+    height: 10cm;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
 }
