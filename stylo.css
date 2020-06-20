@@ -1,15 +1,23 @@
-.contImg > img{
-width: 100vw;
-height: 100vh; 
+.contImg > img {
+   width: 100vw;
+   height: 100vh;
 }
-.navbar-brand > img{
-width: 15rem;
-height: 5rem;
+.navbar-brand > img {
+   width: 15rem;
+   height: 5rem;
+}
 
-
-.footer{ 
-    background-color: black;
-    height: 10cm;
-    color: blanchedalmond;
-    font-family: Arial, Helvetica, sans-serif;
+footer {
+   background-color: black;
+   height: 5vh;
+   color: blanchedalmond;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.containerCarousel {
+   width: 100vw !important;
+   height: 80vh !important;
+   background-color: lightcyan;
+}
+.form-control{
+    max-width: 8rem !important;
 }
