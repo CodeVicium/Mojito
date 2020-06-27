@@ -105,18 +105,31 @@
               <img src="#" alt="">
           </div>
       </section>
-      
+      <form action="" method="post">
+        <h3>Nombre del producto: </h3></br>
+        <input type="text" id="name"></br>
+        <h3>Descripcion del producto: </h3></br>
+        <textarea id="description"></textarea></br>
+        <h3>Imagen del producto: </h3></br>
+        <input type="text" id="image" >
+        <h3>Precio del producto: </h3></br>
+        <input type="number" id="price" >
+        <input type="button" onclick="agregarProducto()" value="enviar">
+      </form>
+      <br>
+      <button onclick="listarProductos()">Listar Productos</button><br>
       <section id="productos">
-        <table style="width: 100vw;height: 50vh;" class="table table-striped table-dark">
-            <thead>
+        <table id="table" style="width: 100vw;height: 50vh;" class="table table-striped table-dark">
+           <thead>
               <tr>
-                <th> Nombre</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Precio</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+           <tbody id="tbody">
+              <!-- <tr>
                 <td><img src="/public/img/descarga.jpg"alt="coca de 1 lts"> <br> Coca cola</td>
                 <td>envase de gaseosa de 1 lts</td>
                 <td>$100</td>
@@ -136,8 +149,8 @@
                 <td><img src="/public/img/absolut 750cc..jpg" alt="absolut 750cc"><br> absolut</td>
                 <td> 750 mlts</td>
                 <td>$380</td>
-              </tr>
-            </tbody>
+              </tr> -->
+            </tbody> 
           </table>
       </section>
       <section id="carousel">
