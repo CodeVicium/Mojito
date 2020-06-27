@@ -12,21 +12,19 @@ function createNuevoField() {
   input.classList.add("form-control");
   let carusel = document.getElementById("carousel");
   let tag = carusel.getElementsByTagName("input");
-  console.log(tag, "tag");
   carusel.appendChild(input);
 }
 function esPar(number) {
   return (number % 2) === 0;
 }
-console.log(productos,"productos");
 function agregarProducto(){
   let nombre = document.getElementById("name").value;
   let descripcion = document.getElementById("description").value;
   let precio = document.getElementById("price").value;
-  let img = document.getElementById("image");
+  let img = document.getElementById("image").value;
   let newProducto = new Producto(nombre,descripcion,precio,img);
   productos.push(newProducto);
-  console.log(productos,"productos");
+  listarProductos()
 }
 
 function listarProductos() {
@@ -35,8 +33,7 @@ function listarProductos() {
   for (let index = 0; index < productos.length; index++) {
     let img = document.createElement("img");
     let tr = tbody.insertRow();
-    img.setAttribute("src",productos[index].pathImg);
-    console.log(img,"img");
+    img.setAttribute("src",`./public/img/${productos[index].pathImg}`);
     tr.insertCell().appendChild(img);
     tr.insertCell().innerText= productos[index].nombre;
     tr.insertCell().innerText= productos[index].descripcion;
@@ -45,6 +42,6 @@ function listarProductos() {
   }
  }
 window.onload = () => {
-
+  listarProductos()
   console.log(table,"table");
 };
