@@ -17,33 +17,37 @@ function createNuevoField() {
 function esPar(number) {
   return (number % 2) === 0;
 }
-// que el cliente vea el precio con el valor de la moneda local 
 function agregarProducto(){
-  // todos tienen que tener un valor
-  // nombre y descripcion tiene que estar el dato que vas a guardar todo en minuscula 
-  // descripcion del producto no puede superar los 140 caracteres
-  // ante cada interaccion que tengamos con el usuario muestro un cartel que le indique cual fue su error 
-  let nombre = document.getElementById("name").value; 
-  let descripcion = document.getElementById("description").value;
+  let nombre = document.getElementById("name").value.toLowerCase(); 
+  let descripcion = document.getElementById("description").value.toLowerCase();
   let precio = document.getElementById("price").value;
   let img = document.getElementById("image").value;
   let newProducto = new Producto(nombre,descripcion,precio,img);
-  productos.push(newProducto);
-  listarProductos()
+  if(nombre && descripcion && precio && img){
+    productos.push(newProducto);
+    listarProductos()
+  }
+  else{
+    alert("No se olvide de llenar los campos de manera correcta");
+  }
 }
-
+function capitalizeFirstLetter(text){
+  return text[0].toUpperCase() + text.slice(1);
+}
+function convertToLocalMoney(number){
+  let localMoney = Number.parseFloat(number).toFixed(2);
+  return `$ ${localMoney}`
+}
 function listarProductos() {
-  // nombre descripcion se tienen que mostrar la primera letra en mayuscula
-  // tiene que estar en la moneda local $
   let tbody = document.getElementById("tbody");
   for (let index = 0; index < productos.length; index++) {
     let img = document.createElement("img");
     let tr = tbody.insertRow();
     img.setAttribute("src",`./public/img/${productos[index].pathImg}`);
     tr.insertCell().appendChild(img);
-    tr.insertCell().innerText= productos[index].nombre;
-    tr.insertCell().innerText= productos[index].descripcion;
-    tr.insertCell().innerText= productos[index].precio;
+    tr.insertCell().innerText= capitalizeFirstLetter(productos[index].nombre);
+    tr.insertCell().innerText= capitalizeFirstLetter(productos[index].descripcion);
+    tr.insertCell().innerText= convertToLocalMoney(productos[index].precio);
   }
  }
 window.onload = () => {

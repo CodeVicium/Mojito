@@ -106,16 +106,24 @@
           </div>
       </section>
       <section id="form">
-        <form action="" method="post">
-          <h3>Nombre del producto: </h3></br>
-          <input type="text" id="name"></br>
-          <h3>Descripcion del producto: </h3></br>
-          <textarea id="description"></textarea></br>
-          <h3>Imagen del producto: </h3></br>
-          <input type="text" id="image" >
-          <h3>Precio del producto: </h3></br>
-          <input type="number" id="price" >
-          <input type="button" onclick="agregarProducto()" value="enviar">
+        <form class="form" action="" method="post">
+          <div class="form-group">
+            <label for="name">Nombre de producto:</label>
+            <input type="text" class="form-control" placeholder="Ingrese el nombre de su producto" id="name"/>
+          </div>
+          <div class="form-group">
+            <label for="description">Descripcion del producto:</label>
+            <textarea maxlength=140  class="form-control" placeholder="Ingrese la descripción de su producto" id="description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image">Imagen del producto:</label>
+            <input type="text" class="form-control" placeholder="Ingrese la url de su imagen" id="image">
+          </div>
+          <div class="form-group">
+            <label for="price">Precio del producto:</label>
+            <input type="number" class="form-control" placeholder="Ingrese el precio de su producto" id="price">
+          </div>
+          <input type="button" class="btn btn-primary" onclick="agregarProducto()" value="enviar">
         </form>
       </section>
       <br>
