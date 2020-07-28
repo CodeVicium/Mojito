@@ -1,16 +1,6 @@
-let mostrarSalames = () => {
-  let salames = ["eze", "lucas", "jhony", "gorriado"];
-
-  for (let i = 0; i < salames.length; i++) {
-    console.log(`${salames[i][0].toUpperCase()}${salames[i].slice(1)}`);
-  }
-};
-
 let jugar = () => {
   // el nombre de los jugadore solo se pide una vez despues no se deben mostrar 
-
-  // se deberia mostrar despues de la primera vez solo un cuadro con su nombre 
-  //
+ // se deberia mostrar despues de la primera vez solo un cuadro con su nombre 
   console.log(document.getElementsByName("name"));
   let player1 = document.getElementsByName("name")[0].value;
   let player2 = document.getElementsByName("name")[1].value;
@@ -35,19 +25,3 @@ let jugar = () => {
       : `gano ${player2}`;
   alert(`El resultado fue ${ganador}`); // el resultado se debe mostrar bonito al costado derecho de las imagenes 
 };
-// var saludo = " hola ",nombre,final = " !",resultado;
-// {
-//   nombre = prompt("soy ATLAS cual es tu nombre");
-//   resultado = saludo + nombre + final;
-//   alert(resultado);
-// }
-
-// let pregunta = "! ",accion,signo = " buenisimo a buscarlo!",resultado1;
-// {
-//   accion = prompt("que te gustaria saber hoy de bebidas?");
-//   resultado1 = pregunta + accion + signo;
-//   alert(resultado1);
-// }
-
-// let sugerir = "entra a nuestra pagina y encuentra lo que buscas tenemos mucho de eso gracias!";
-// alert(sugerir);
