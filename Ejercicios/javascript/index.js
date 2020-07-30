@@ -1,9 +1,19 @@
+let error = document.getElementById("error");
+Error.style.color="red";
+
 let jugar = () => {
   // el nombre de los jugadore solo se pide una vez despues no se deben mostrar 
- // se deberia mostrar despues de la primera vez solo un cuadro con su nombre 
+  // se deberia mostrar despues de la primera vez solo un cuadro con su nombre 
   console.log(document.getElementsByName("name"));
   let player1 = document.getElementsByName("name")[0].value;
   let player2 = document.getElementsByName("name")[1].value;
+  let mensajeserror = [];
+
+  if(name.value === null || name.value === ""){
+    mensajeserror.push("ingresa un nombre")
+  }
+  error.innerHTML = mensajeserror.join(", ");
+
   // validar que el usuario haya escrito un valor
   let valorPlayer1 = Math.ceil(Math.random() * 6);
   let valorPlayer2 = Math.ceil(Math.random() * 6);
@@ -15,6 +25,7 @@ let jugar = () => {
   imgPlayer1.setAttribute("src",`./img/${valorPlayer1}.jpg`)
   let imgPlayer2= document.createElement("img");
   imgPlayer2.setAttribute("src",`./img/${valorPlayer2}.jpg`)
+  
   paternPlayer1.appendChild(imgPlayer1);
   paternPlayer2.appendChild(imgPlayer2);
   let ganador =
@@ -23,5 +34,9 @@ let jugar = () => {
       : valorPlayer1 === valorPlayer2
       ? ` Fue empate`
       : `gano ${player2}`;
+    
   alert(`El resultado fue ${ganador}`); // el resultado se debe mostrar bonito al costado derecho de las imagenes 
+
+  
+  
 };
