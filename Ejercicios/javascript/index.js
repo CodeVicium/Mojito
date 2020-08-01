@@ -6,7 +6,13 @@ let jugar = () => {
   console.log(document.getElementsByName("jugador"));
   let player1 = document.getElementsByName("jugador")[0].value;
   let player2 = document.getElementsByName("jugador")[1].value;
-  let mensajeserror =[];
+  if(player1 && player2){
+
+  }
+  else{
+
+  }
+  
 
   
   // validar que el usuario haya escrito un valor
@@ -38,13 +44,5 @@ let jugar = () => {
       ? ` Fue empate`
       : `gano ${player2}`;
 
-      
-      //let mensajeserror = [0,1];
-
-
-      //if (jugador1.value === null || jugador1.value === " ") {
-        //mensajeserror.push("ingresa un nombre");
-      //}
-      
       alert(`El ganador fue ${ganador}`); // el resultado se debe mostrar bonito al costado derecho de las imagenes
     }
