@@ -91,7 +91,9 @@ var cortarCirco=()=>{
   document.getElementById("tapita").innerHTML = gato;
 }
 var cambiarAHombre=()=>{
-  // mostrar el indice de la palabra stupido
+  // cambiar palabra de mujer a hombre
   let palabra = "yo alguna vez fui mujer";
-  document.getElementById("tapita").innerHTML = gato;
+  let cambio = palabra.repleace("mujer","hombre");
+  
+  document.getElementById("juanete").innerHTML = cambio ;
 }
