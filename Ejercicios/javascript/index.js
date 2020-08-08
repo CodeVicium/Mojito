@@ -94,6 +94,5 @@ var cambiarAHombre=()=>{
   // cambiar palabra de mujer a hombre
   let palabra = "yo alguna vez fui mujer";
   let cambio = palabra.repleace("mujer","hombre");
-  
-  document.getElementById("juanete").innerHTML = cambio ;
+  document.getElementById("juanete").innerHTML = cambio;
 }
