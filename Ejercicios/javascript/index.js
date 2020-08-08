@@ -79,7 +79,13 @@ let jugar = () => {
 };
 const mostrarStupido=()=>{
   // mostrar el indice de la palabra stupido
-  let stupid = "habia una vez un circo que siempre tenia stupidos y una variedad muy grande de stupido";
-  let stupido = stupid.indexOf("stupidos");
+  let stupid = "habia una vez un circo que siempre tenia stupido y una variedad muy grande de stupido";
+  let stupido = stupid.indexOf("stupido");
+  document.getElementById("guaso").innerHTML = stupido;
+}
+const cortarCirco=()=>{
+  // mostrar el indice de la palabra stupido
+  let stupid = "habia una vez un circo que siempre tenia stupido y una variedad muy grande de stupido";
+  let stupido = stupid.indexOf("stupido");
   document.getElementById("guaso").innerHTML = stupido;
 }
