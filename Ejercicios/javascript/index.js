@@ -87,6 +87,11 @@ var cortarCirco=()=>{
   // mostrar el indice de la palabra stupido
   let stupid = "habia una vez un circo que siempre tenia stupido y una variedad muy grande de stupido";
   let stupidos = stupid.indexOf("circo");
-  let gato = stupid.slice(17,22);
+  let gato = stupid.slice(stupidos,22);
+  document.getElementById("tapita").innerHTML = gato;
+}
+var cambiarAHombre=()=>{
+  // mostrar el indice de la palabra stupido
+  let palabra = "yo alguna vez fui mujer";
   document.getElementById("tapita").innerHTML = gato;
 }
