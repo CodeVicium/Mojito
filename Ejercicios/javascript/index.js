@@ -77,23 +77,22 @@ let jugar = () => {
 
   alert("debera cargar los nombres de los jugadores antes de iniciar el juego");
 };
-var mostrarStupido=()=>{
+const mostrarStupido=()=>{
   // mostrar el indice de la palabra stupido
   let stupid = "habia una vez un circo que siempre tenia stupido y una variedad muy grande de stupido";
   let stupido = stupid.indexOf("stupido");
   document.getElementById("guaso").innerHTML = stupido;
 }
-var cortarCirco=()=>{
+const cortarCirco=()=>{
   // mostrar el indice de la palabra stupido
   let stupid = "habia una vez un circo que siempre tenia stupido y una variedad muy grande de stupido";
   let stupidos = stupid.indexOf("circo");
   let gato = stupid.slice(stupidos,22);
   document.getElementById("tapita").innerHTML = gato;
 }
-var cambiarAHombre=()=>{
+const cambiarAHombre=()=>{
   // cambiar palabra de mujer a hombre
   let palabra = "yo alguna vez fui mujer";
-  let cambio = palabra.repleace("mujer","hombre");
-  
+  let cambio = palabra.replace("mujer","hombre");
   document.getElementById("juanete").innerHTML = cambio ;
 }
