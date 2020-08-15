@@ -94,5 +94,11 @@ const cambiarAHombre=()=>{
   // cambiar palabra de mujer a hombre
   let palabra = "yo alguna vez fui mujer";
   let cambio = palabra.replace("mujer","hombre");
-  document.getElementById("juanete").innerHTML = cambio ;
+  document.getElementById("juanete").innerHTML = cambio;
+}
+
+const MayusATodo =()=>{
+  let text="me encanta programar";
+  let Mayus=text.toUpperCase();
+  document.getElementById("cambio"),innerHTML = Mayus; 
 }
