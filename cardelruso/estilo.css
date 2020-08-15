@@ -1,5 +1,23 @@
-body{
-    background-image: url(./public/img/portada4k.jpg);
+div.relative {
+    background-image: url(./public/img/remera.jpg);
     background-repeat: no-repeat;
-
-}
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    width: 70vw;
+    height: 68vh;
+    border: 0.5rem solid lightblue;
+    box-shadow: 5px 5px 8px 1px lightblue;
+    margin-top: 2rem;
+    border-radius: 15px;
+  } 
+  
+  div.absolute {
+    text-transform:uppercase;   
+    position: absolute;
+    background-color: cornsilk;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+  }
