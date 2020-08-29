@@ -1,23 +1,42 @@
+.cosa {
+  width: 70vw;
+  height: 68vh;
+  box-shadow: 5px 5px 8px 1px lightblue;
+  border: 0.5rem solid lightblue;
+}
+
 div.relative {
-    background-image: url(./public/img/remera.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    margin: auto;
-    width: 70vw;
-    height: 68vh;
-    border: 0.5rem solid lightblue;
-    box-shadow: 5px 5px 8px 1px lightblue;
-    margin-top: 2rem;
-    border-radius: 15px;
-  } 
-  
-  div.absolute {
-    text-transform:uppercase;   
-    position: absolute;
-    background-color: cornsilk;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-  }
+  background-image: url(./public/img/remera.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60vw;
+  height: 50vh;
+  position: relative;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 15px;
+  transition-duration: 1s;
+}
+.translate {
+}
+.translate:hover {
+  transform: translateX(50rem) scale(1.7);
+}
+
+div.absolute {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: cornsilk;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+}
+.over {
+  transition-duration: 1s;
+}
+.over:hover {
+  transform: rotateY(180deg) scaleX(2);
+
+  box-shadow: 1px 4px 5px 2px black;
+}
